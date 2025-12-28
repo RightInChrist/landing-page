@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Right In Christ Ministry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Banner */
+        .top-banner {
+            width: 100%;
+            background: #1a1a1a;
+            border-bottom: 4px solid #FFD700;
+        }
+
+        .top-banner a {
+            display: block;
+            width: 100%;
+        }
+
+        .top-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: #fff;
+            padding: 2rem;
+            border-bottom: 4px solid #FFD700;
+        }
+
+        header nav {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            max-width: 1200px;
+            margin: 1rem auto 0;
+        }
+
+        .icon {
+            font-size: 3rem;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            background: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #FFD700;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .release-section {
+            background: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #FFD700;
+        }
+
+        .release-section h2 {
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .release-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .album-art {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .album-art .placeholder {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+        }
+
+        .album-art p {
+            color: #999;
+            font-style: italic;
+        }
+
+        .release-info h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .release-info p {
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .release-info .metadata {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        .release-info .metadata p {
+            margin: 0.25rem 0;
+            font-size: 0.95rem;
+        }
+
+        .streaming-links {
+            margin-top: 1.5rem;
+        }
+
+        .streaming-links h4 {
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .streaming-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .streaming-links li {
+            margin: 0.5rem 0;
+        }
+
+        .streaming-links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .streaming-links a:hover {
+            text-decoration: underline;
+        }
+
+        .placeholder-text {
+            color: #999;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .release-content {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <a href="https://github.com/RightInChrist/StandWithJesus" target="_blank" rel="noopener">
+            <img src="https://raw.githubusercontent.com/RightInChrist/StandWithJesus/main/banner_deuteronomy_6-5_NIV.svg" alt="Deuteronomy 6:5 - Love the LORD your God with all your heart">
+        </a>
+    </div>
+
+    <header>
+        <nav>
+            <a href="../">← Back to Home</a>
+        </nav>
+        <h1><span class="icon">🎵</span>Music</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Right In Christ Music</h2>
+            <p>Worship music and Christian songs that glorify God.</p>
+        </div>
+
+        <!-- Latest Album -->
+        <div class="release-section">
+            <h2>Latest Album</h2>
+            <div class="release-content">
+                <div class="album-art">
+                    <img src="good-news.jpeg" alt="Good News Album Art" style="max-width: 100%; border-radius: 4px;">
+                </div>
+                <div class="release-info">
+                    <h3>Good News</h3>
+                    <p><strong>By Right in Christ</strong></p>
+
+                    <div class="metadata">
+                        <p><strong>Genre:</strong> Christian Dance</p>
+                    </div>
+
+                    <p>The album tells the story of Jesus and includes house inspired beats with interesting instrumentals including banjo, violin, harmonica, and more along with various styles of vocals: opera, country, reggae, and choir.</p>
+
+                    <div class="streaming-links">
+                        <h4>Listen Now</h4>
+                        <ul>
+                            <li><a href="https://open.spotify.com/album/1zvEf99GVZT0ZWMmx6exue?referral=labelaffiliate&utm_source=1011lBV5ZQbj&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate" target="_blank" rel="noopener">Spotify - Good News</a></li>
+                            <li><a href="https://music.apple.com/us/album/good-news/1849699070" target="_blank" rel="noopener">Apple Music - Good News</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=xL3qoAngNsg&list=OLAK5uy_m9QdJzWI4XEBdYLEjUq7yPOzQTeMzv11s&index=8" target="_blank" rel="noopener">YouTube Music - Good News</a></li>
+                            <li><a href="https://music.amazon.com/albums/B0FY1MP94D" target="_blank" rel="noopener">Amazon Music - Good News</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Single - Hidden for now -->
+        <!--
+        <div class="release-section">
+            <h2>Latest Single</h2>
+            <div class="release-content">
+                <div class="album-art">
+                    <div class="placeholder">🎵</div>
+                    <p>Single artwork will be displayed here</p>
+                </div>
+                <div class="release-info">
+                    <h3>Single Title</h3>
+                    <p class="placeholder-text">Add your single title here</p>
+
+                    <div class="metadata">
+                        <p><strong>Release Date:</strong> <span class="placeholder-text">TBA</span></p>
+                        <p><strong>Duration:</strong> <span class="placeholder-text">Length of song</span></p>
+                        <p><strong>Genre:</strong> <span class="placeholder-text">Christian/Worship</span></p>
+                    </div>
+
+                    <p class="placeholder-text">Add single description here. Share what inspired this song, its message, and any special meaning it holds.</p>
+
+                    <div class="streaming-links">
+                        <h4>Listen Now</h4>
+                        <ul>
+                            <li class="placeholder-text">Spotify link - <em>Add your Spotify single link</em></li>
+                            <li class="placeholder-text">Apple Music link - <em>Add your Apple Music link</em></li>
+                            <li class="placeholder-text">YouTube link - <em>Add your YouTube link</em></li>
+                            <li class="placeholder-text">Amazon Music link - <em>Add your Amazon Music link</em></li>
+                            <li class="placeholder-text">SoundCloud link - <em>Add your SoundCloud link</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <footer>
+        <p><strong>Right In Christ Ministry</strong></p>
+        <p>Loving the Lord with all our heart, soul, and strength</p>
+        <p style="margin-top: 1rem;">
+            <a href="../">Return to Home</a> |
+            <a href="https://github.com/RightInChrist/StandWithJesus">Join #StandWithJesus</a>
+        </p>
+    </footer>
+</body>
+</html>

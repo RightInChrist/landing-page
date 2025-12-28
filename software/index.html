@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - Right In Christ Ministry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Banner */
+        .top-banner {
+            width: 100%;
+            background: #1a1a1a;
+            border-bottom: 4px solid #FFD700;
+        }
+
+        .top-banner a {
+            display: block;
+            width: 100%;
+        }
+
+        .top-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: #fff;
+            padding: 2rem;
+            border-bottom: 4px solid #FFD700;
+        }
+
+        header nav {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header nav a {
+            color: #FFD700;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            max-width: 1200px;
+            margin: 1rem auto 0;
+        }
+
+        .icon {
+            font-size: 3rem;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            background: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #FFD700;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .project-section {
+            background: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #FFD700;
+        }
+
+        .project-section h2 {
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+        }
+
+        .project-card h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            color: #555;
+            margin: 0.75rem 0;
+            line-height: 1.6;
+        }
+
+        .project-links {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: #FFD700;
+            color: #1a1a1a;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #FFC700;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+        }
+
+        .project-link.secondary {
+            background: #fff;
+            border: 2px solid #1a1a1a;
+        }
+
+        .project-link.secondary:hover {
+            background: #f0f0f0;
+        }
+
+        .tech-stack {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .tech-stack h4 {
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .tech-stack p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+
+            .project-link {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <a href="https://github.com/RightInChrist/StandWithJesus" target="_blank" rel="noopener">
+            <img src="https://raw.githubusercontent.com/RightInChrist/StandWithJesus/main/banner_deuteronomy_6-5_NIV.svg" alt="Deuteronomy 6:5 - Love the LORD your God with all your heart">
+        </a>
+    </div>
+
+    <header>
+        <nav>
+            <a href="../">← Back to Home</a>
+        </nav>
+        <h1><span class="icon">💻</span>Software</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Software Projects</h2>
+            <p>Tools and visualizations developed to support ministry work and research initiatives.</p>
+        </div>
+
+        <!-- CHE Projects -->
+        <div class="project-section">
+            <h2>Convective Heat Engine Projects</h2>
+            <p style="color: #555; margin-bottom: 1.5rem;">We built these static sites and tools to support Jason Delport's research into the Convective Heat Engine - a theoretical mega project that could address water problems and environmental challenges at scale.</p>
+
+            <div class="project-card">
+                <h3>CHE Project Website</h3>
+                <p>The main informational website for the Convective Heat Engine project, built for Jason Delport to share his research and vision for this theoretical mega project.</p>
+
+                <p>This static site presents the CHE concept, its potential applications, and the research behind it in an accessible format for researchers, engineers, and interested stakeholders.</p>
+
+                <div class="tech-stack">
+                    <h4>Project Owner</h4>
+                    <p>Jason Delport - Creator and owner of the Convective Heat Engine concept</p>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://convective-heat-engine.github.io/" class="project-link" target="_blank" rel="noopener">🌐 Visit CHE Website</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>CHE Interactive Visualization</h3>
+                <p>An interactive web-based visualization tool designed to help people understand the Convective Heat Engine concept through dynamic graphics and interactive exploration.</p>
+
+                <p>This visualization makes complex engineering concepts accessible through interactive graphics, allowing users to explore how the CHE system could work and its potential applications.</p>
+
+                <div class="tech-stack">
+                    <h4>Technology Stack</h4>
+                    <p>Built with modern web technologies for cross-platform accessibility and interactive visualization capabilities.</p>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://rightinchrist.github.io/che-visualization/" class="project-link" target="_blank" rel="noopener">🚀 Launch Visualization</a>
+                    <a href="https://github.com/RightInChrist/che-visualization" class="project-link secondary" target="_blank" rel="noopener">📦 View Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Tools -->
+        <div class="project-section">
+            <h2>Community & Athletics Tools</h2>
+
+            <div class="project-card">
+                <h3>LeaguePicker</h3>
+                <p>A tool designed to help recreational leagues assign fair and balanced teams. Whether you're organizing youth sports, adult recreation leagues, or community events, LeaguePicker takes the guesswork out of team formation.</p>
+
+                <p>This tool analyzes player information and creates balanced teams, ensuring fair competition and better experiences for all participants.</p>
+
+                <div class="tech-stack">
+                    <h4>Use Case</h4>
+                    <p>Perfect for coaches, league organizers, and community sports coordinators who want to create balanced teams quickly and fairly.</p>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://rightinchrist.github.io/LeaguePicker/" class="project-link" target="_blank" rel="noopener">🏆 Use LeaguePicker</a>
+                    <a href="https://github.com/RightInChrist/LeaguePicker" class="project-link secondary" target="_blank" rel="noopener">📦 View Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Projects Section -->
+        <div class="project-section">
+            <h2>Our Approach to Software</h2>
+            <p style="color: #555; margin: 1rem 0;">We create tools that serve both immediate needs and long-term research goals. Our software projects aim to:</p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: #555;">
+                <li style="margin: 0.5rem 0;">Make complex concepts accessible and understandable</li>
+                <li style="margin: 0.5rem 0;">Support research and innovation in areas that could benefit communities</li>
+                <li style="margin: 0.5rem 0;">Provide practical tools for ministry and educational purposes</li>
+                <li style="margin: 0.5rem 0;">Share knowledge and resources to advance important work</li>
+            </ul>
+            <p style="color: #555; margin: 1rem 0; font-style: italic;">More projects will be added as we develop additional tools and visualizations.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Right In Christ Ministry</strong></p>
+        <p>Loving the Lord with all our heart, soul, and strength</p>
+        <p style="margin-top: 1rem;">
+            <a href="../">Return to Home</a> |
+            <a href="https://github.com/RightInChrist/StandWithJesus">Join #StandWithJesus</a>
+        </p>
+    </footer>
+</body>
+</html>
