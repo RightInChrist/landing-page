@@ -371,6 +371,17 @@ header h1 {
     margin: 0.5rem 0;
 }
 
+.release-info p a {
+    color: #e8a547;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.release-info p a:hover {
+    color: #f4c26f;
+    text-decoration: underline;
+}
+
 .release-info .metadata {
     margin: 1rem 0;
     padding: 1rem;
@@ -412,6 +423,44 @@ header h1 {
 .streaming-links a:hover {
     color: #f4c26f;
     text-decoration: underline;
+}
+
+/* Track List */
+.track-list {
+    background: rgba(0,0,0,0.2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.track-list ol {
+    margin-left: 1.5rem;
+    color: #d4b896;
+}
+
+.track-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(193, 120, 23, 0.2);
+}
+
+.track-list li:last-child {
+    border-bottom: none;
+}
+
+.track-list a {
+    color: #e8a547;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.track-list a:hover {
+    color: #f4c26f;
+    text-decoration: underline;
+}
+
+.track-list em {
+    color: #b89a6a;
+    font-size: 0.9rem;
 }
 
 /* Section & Project Cards */
